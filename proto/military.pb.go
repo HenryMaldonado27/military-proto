@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.11
 // 	protoc        v3.21.12
-// source: military.proto
+// source: proto/military.proto
 
 package proto
 
@@ -33,7 +33,7 @@ type MilitaryEvent struct {
 
 func (x *MilitaryEvent) Reset() {
 	*x = MilitaryEvent{}
-	mi := &file_military_proto_msgTypes[0]
+	mi := &file_proto_military_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -45,7 +45,7 @@ func (x *MilitaryEvent) String() string {
 func (*MilitaryEvent) ProtoMessage() {}
 
 func (x *MilitaryEvent) ProtoReflect() protoreflect.Message {
-	mi := &file_military_proto_msgTypes[0]
+	mi := &file_proto_military_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -58,7 +58,7 @@ func (x *MilitaryEvent) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use MilitaryEvent.ProtoReflect.Descriptor instead.
 func (*MilitaryEvent) Descriptor() ([]byte, []int) {
-	return file_military_proto_rawDescGZIP(), []int{0}
+	return file_proto_military_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *MilitaryEvent) GetCountry() string {
@@ -89,11 +89,11 @@ func (x *MilitaryEvent) GetTimestamp() int64 {
 	return 0
 }
 
-var File_military_proto protoreflect.FileDescriptor
+var File_proto_military_proto protoreflect.FileDescriptor
 
-const file_military_proto_rawDesc = "" +
+const file_proto_military_proto_rawDesc = "" +
 	"\n" +
-	"\x0emilitary.proto\x12\x05proto\"\x9d\x01\n" +
+	"\x14proto/military.proto\x12\x05proto\"\x9d\x01\n" +
 	"\rMilitaryEvent\x12\x18\n" +
 	"\acountry\x18\x01 \x01(\tR\acountry\x12(\n" +
 	"\x10warplanes_in_air\x18\x02 \x01(\x05R\x0ewarplanesInAir\x12*\n" +
@@ -101,22 +101,22 @@ const file_military_proto_rawDesc = "" +
 	"\ttimestamp\x18\x04 \x01(\x03R\ttimestampB2Z0github.com/HenryMaldonado27/military-proto/protob\x06proto3"
 
 var (
-	file_military_proto_rawDescOnce sync.Once
-	file_military_proto_rawDescData []byte
+	file_proto_military_proto_rawDescOnce sync.Once
+	file_proto_military_proto_rawDescData []byte
 )
 
-func file_military_proto_rawDescGZIP() []byte {
-	file_military_proto_rawDescOnce.Do(func() {
-		file_military_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_military_proto_rawDesc), len(file_military_proto_rawDesc)))
+func file_proto_military_proto_rawDescGZIP() []byte {
+	file_proto_military_proto_rawDescOnce.Do(func() {
+		file_proto_military_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_military_proto_rawDesc), len(file_proto_military_proto_rawDesc)))
 	})
-	return file_military_proto_rawDescData
+	return file_proto_military_proto_rawDescData
 }
 
-var file_military_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
-var file_military_proto_goTypes = []any{
+var file_proto_military_proto_msgTypes = make([]protoimpl.MessageInfo, 1)
+var file_proto_military_proto_goTypes = []any{
 	(*MilitaryEvent)(nil), // 0: proto.MilitaryEvent
 }
-var file_military_proto_depIdxs = []int32{
+var file_proto_military_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for method output_type
 	0, // [0:0] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -124,26 +124,26 @@ var file_military_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_military_proto_init() }
-func file_military_proto_init() {
-	if File_military_proto != nil {
+func init() { file_proto_military_proto_init() }
+func file_proto_military_proto_init() {
+	if File_proto_military_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_military_proto_rawDesc), len(file_military_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_military_proto_rawDesc), len(file_proto_military_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   1,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_military_proto_goTypes,
-		DependencyIndexes: file_military_proto_depIdxs,
-		MessageInfos:      file_military_proto_msgTypes,
+		GoTypes:           file_proto_military_proto_goTypes,
+		DependencyIndexes: file_proto_military_proto_depIdxs,
+		MessageInfos:      file_proto_military_proto_msgTypes,
 	}.Build()
-	File_military_proto = out.File
-	file_military_proto_goTypes = nil
-	file_military_proto_depIdxs = nil
+	File_proto_military_proto = out.File
+	file_proto_military_proto_goTypes = nil
+	file_proto_military_proto_depIdxs = nil
 }
