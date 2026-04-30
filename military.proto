@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package military;
+
+option go_package = "military-proto/proto";
+
+service MilitaryService {
+  rpc PublishEvent(MilitaryEvent) returns (Ack);
+}
+
+message MilitaryEvent {
+  string id = 1;
+  string type = 2;
+}
+
+message Ack {
+  string status = 1;
+}
