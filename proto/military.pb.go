@@ -147,7 +147,7 @@ const file_proto_military_proto_rawDesc = "" +
 	"\x06status\x18\x01 \x01(\tR\x06status2C\n" +
 	"\x0fMilitaryService\x120\n" +
 	"\fPublishEvent\x12\x14.proto.MilitaryEvent\x1a\n" +
-	".proto.AckB2Z0github.com/HenryMaldonado27/military-proto/protob\x06proto3"
+	".proto.AckB8Z6github.com/HenryMaldonado27/military-proto/proto;protob\x06proto3"
 
 var (
 	file_proto_military_proto_rawDescOnce sync.Once
