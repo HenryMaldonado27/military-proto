@@ -4,9 +4,17 @@ package proto;
 
 option go_package = "github.com/HenryMaldonado27/military-proto/proto";
 
+service MilitaryService {
+  rpc PublishEvent (MilitaryEvent) returns (Ack);
+}
+
 message MilitaryEvent {
   string country = 1;
   int32 warplanes_in_air = 2;
   int32 warships_in_water = 3;
   int64 timestamp = 4;
+}
+
+message Ack {
+  string status = 1;
 }
