@@ -4,7 +4,7 @@
 // 	protoc        v3.21.12
 // source: proto/military.proto
 
-package proto
+package protov1
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -137,17 +137,16 @@ var File_proto_military_proto protoreflect.FileDescriptor
 
 const file_proto_military_proto_rawDesc = "" +
 	"\n" +
-	"\x14proto/military.proto\x12\x05proto\"\x9d\x01\n" +
+	"\x14proto/military.proto\x12\bproto.v1\"\x9d\x01\n" +
 	"\rMilitaryEvent\x12\x18\n" +
 	"\acountry\x18\x01 \x01(\tR\acountry\x12(\n" +
 	"\x10warplanes_in_air\x18\x02 \x01(\x05R\x0ewarplanesInAir\x12*\n" +
 	"\x11warships_in_water\x18\x03 \x01(\x05R\x0fwarshipsInWater\x12\x1c\n" +
 	"\ttimestamp\x18\x04 \x01(\x03R\ttimestamp\"\x1d\n" +
 	"\x03Ack\x12\x16\n" +
-	"\x06status\x18\x01 \x01(\tR\x06status2C\n" +
-	"\x0fMilitaryService\x120\n" +
-	"\fPublishEvent\x12\x14.proto.MilitaryEvent\x1a\n" +
-	".proto.AckB8Z6github.com/HenryMaldonado27/military-proto/proto;protob\x06proto3"
+	"\x06status\x18\x01 \x01(\tR\x06status2I\n" +
+	"\x0fMilitaryService\x126\n" +
+	"\fPublishEvent\x12\x17.proto.v1.MilitaryEvent\x1a\r.proto.v1.AckB:Z8github.com/HenryMaldonado27/military-proto/proto;protov1b\x06proto3"
 
 var (
 	file_proto_military_proto_rawDescOnce sync.Once
@@ -163,12 +162,12 @@ func file_proto_military_proto_rawDescGZIP() []byte {
 
 var file_proto_military_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
 var file_proto_military_proto_goTypes = []any{
-	(*MilitaryEvent)(nil), // 0: proto.MilitaryEvent
-	(*Ack)(nil),           // 1: proto.Ack
+	(*MilitaryEvent)(nil), // 0: proto.v1.MilitaryEvent
+	(*Ack)(nil),           // 1: proto.v1.Ack
 }
 var file_proto_military_proto_depIdxs = []int32{
-	0, // 0: proto.MilitaryService.PublishEvent:input_type -> proto.MilitaryEvent
-	1, // 1: proto.MilitaryService.PublishEvent:output_type -> proto.Ack
+	0, // 0: proto.v1.MilitaryService.PublishEvent:input_type -> proto.v1.MilitaryEvent
+	1, // 1: proto.v1.MilitaryService.PublishEvent:output_type -> proto.v1.Ack
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

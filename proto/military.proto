@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package proto;
+package proto.v1;
 
-option go_package = "github.com/HenryMaldonado27/military-proto/proto;proto";
+option go_package = "github.com/HenryMaldonado27/military-proto/proto;protov1";
 
 service MilitaryService {
   rpc PublishEvent (MilitaryEvent) returns (Ack);

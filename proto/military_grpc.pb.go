@@ -4,7 +4,7 @@
 // - protoc             v3.21.12
 // source: proto/military.proto
 
-package proto
+package protov1
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	MilitaryService_PublishEvent_FullMethodName = "/proto.MilitaryService/PublishEvent"
+	MilitaryService_PublishEvent_FullMethodName = "/proto.v1.MilitaryService/PublishEvent"
 )
 
 // MilitaryServiceClient is the client API for MilitaryService service.
@@ -108,7 +108,7 @@ func _MilitaryService_PublishEvent_Handler(srv interface{}, ctx context.Context,
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var MilitaryService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.MilitaryService",
+	ServiceName: "proto.v1.MilitaryService",
 	HandlerType: (*MilitaryServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
